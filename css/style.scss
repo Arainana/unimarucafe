@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+    background: #fff url("../images/tyler-nix-489782-unsplash.jpg") no-repeat fixed left bottom;
+    // background-size: cover;
+    background-size: 85%;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Fredericka the Great', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, cursive, 'PT Mono', monospace;
+    }
+
+.top {
+    margin: 15%;
+    .site-title {
+      font-size: 5.5rem;
+      font-weight: normal;
+      color: #fff;
+      margin: 0;
+      letter-spacing: 0.5rem;
+  }
+    .site-title-sub{
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+      font-weight: normal;
+      color: #fff;
+    }
+    .site-title-sub::after, .site-title-sub::before {
+      content: '';
+      display: inline-block;
+      width: 40px;
+      height: 1px;
+      margin: 0 30px;
+      background-color: #fff;
+      vertical-align: middle;
+    }
+  }
+.about {
+  position: relative;
+  padding: 5%;
+  background-color: rgba(15,11,26,0.9);
+  overflow: hidden;
+  .about-title {
+      font-size: 1.5rem;
+      position: relative;
+      left: -33%;
+      display: inline-block;
+      border: 1px dashed #fff;
+      padding: 0.5rem 1.5rem;
+      letter-spacing: 0.2rem;
+      border-radius: 33px;
+    }
+    .about-unimarucafe {
+      position: relative;
+      padding: 0 10%;
+    }
+    .about-text {
+      position: relative;
+      max-width: 56%;
+      font-family: PT Mono,Meiryo, sans-serif;
+      padding-left: 5%;
+      font-size: 1.2rem;
+      text-align:left;
+      letter-spacing: 1px;
+      color: #CECECE;
+      line-height: 2.2rem;
+    }
+    // .akdog-text::after {
+    //   content: "";
+    //   position: absolute;
+    //   display: inline-block;
+    //   background-color: orange;
+    //   width: 100px;
+    //   height: 100px;
+    // }
+}
+
+.akdog {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+      .akdog-image {
+        position: relative;
+        left: 5%;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        padding: 7px;
+        border: 2px #FFF dashed;
+      }
+      .akdog-text {
+        // position: absolute;
+        display: inline-block;
+        font-size: 1.2rem;
+        // bottom: 20%;
+        // right: 9%;
+        text-align: center;
+        line-height: 25px;
+        padding: 14px;
+        margin: 0;
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        border: 2px #D09E64 dashed;
+    }
+}
+.menu {
+    background-color: #fff;
+    padding-bottom: 80px;
+    font-size: 1.2rem;
+      .menu-title {
+          position: relative;
+          top: -40px;
+          font-size: 1.5rem;
+          color: #333;
+          display: inline-block;
+          letter-spacing: 0.3rem;
+          padding: 10px 60px;
+          border-radius: 20px 20px 0 0;
+          background-color: #fff;
+        }
+}
+  .menu-list {
+    display: flex;
+    position: relative;
+    font-size: 1.2rem;
+    color: #969696;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 42%;
+    margin-top: 100px;
+    letter-spacing: 0.1rem;
+        .menu-text {
+          position: relative;
+          padding-top: 100%;
+          font-size: 1.8rem;
+          letter-spacing: 0;
+          color: #484848;
+          font-family: PT Mono,Meiryo, sans-serif;
+          text-align: left;
+          .caption {
+            font-size: 1.2rem;
+          }
+        .price {
+            text-align: right;
+            color: #8c8c8c;
+          }
+        }
+        .menu-item {
+          font-size: 1rem;
+          width: 40%;
+          padding-bottom: 100px;
+          // border: #E6E6E6 1px solid;
+        }
+        .roast_coffee {
+          background: url(../images/roast_coffee.png) no-repeat;
+          background-size: 100%;
+        }
+        .rich_taste {
+          background: url(../images/rich_taste.png) no-repeat;
+          background-size: 100%;
+        }
+        .cafe_au_latte {
+          background: url(../images/cafe_au_latte.png) no-repeat;
+          background-size: 100%;
+        }
+        .ks_specialite {
+          background: url(../images/specialite.png) no-repeat;
+          background-size: 100%;
+        }
+        .menu-item:nth-child(even) {
+          margin-left: 20%;
+        }
+        .menu-item:nth-child(even)::after {
+          content: "";
+          position: absolute;
+          left: 0%;
+          top: 40%;
+          display: block;
+          width: 100%;
+          height: 1px;
+          background-color: #E6E6E6;
+        }
+        .and_more {
+          position: relative;
+          font-family: PT Mono,Meiryo, sans-serif;
+        }
+  }
+  .contact {
+    padding: 100px;
+    background-color: rgba(0,0,0,0.5);
+    h2 {
+      font-family: PT Mono,Meiryo, sans-serif;
+      letter-spacing: 0.3rem;
+    }
+    span {
+      display: block;
+      font-size: 3rem;
+      width: 10px;
+      margin: auto;
+      transform: rotate(90deg);
+      }
+    .botton {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 10px 30px;
+      color: #fff;
+      letter-spacing: 0.1rem;
+      border-radius: 20px;
+      text-decoration: none;
+      background-color: #3B168E;
+      transition: 0.3s;
+      &:visited {
+        color: #fff;
+      }
+      &:hover {
+        color: #3B168E;
+        background-color: #fff;
+        letter-spacing: 0.2rem;
+      }
+    }
+  }
+  .footer {
+    padding: 10px;
+    background-color: #0E0722;
+    color: #E6E6E6;
+    font-size: 1rem;
+    text-align: right;
+    letter-spacing: 0.1rem;
+  }
+  @media (max-width: 768px) {
+    .top .site-title-sub {
+      font-size: 1.2rem;
+        }
+    .about {
+      padding: 5% 5% 10%;
+        .about-title {
+          left: 0;
+        }
+        .about-text {
+          padding-left: 0;
+          text-align: center;
+          max-width: 100%;
+        }
+        .akdog {
+          position: static;
+          padding-top: 5%;
+        }
+      }
+      .menu-list {
+        width: 55%;
+      }
+  }
