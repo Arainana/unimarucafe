@@ -255,19 +255,32 @@ body {
   text-align: right;
   letter-spacing: 0.1rem;
 }
+
+/* ここからレスポンシブ */
+
 @media screen and (min-width:1024px) {
   body {
   background-size: 85% auto;
   }
 }
+
+/* スマートフォン用 */
+
 @media screen and (max-width: 768px) {
   body {
     background-image: url("../images/bgimg_moble.jpg");
     background-position: center center;
     background-size: cover;
   }
+  .top {
+    margin: 10% 5%;
+  }
   .top .site-title-sub {
     font-size: 1.2rem;
+  }
+  .site-title-sub::after, .site-title-sub::before {
+    width: 20px;
+    margin: 0 20px;
   }
   .about {
     padding: 5% 5% 10%;
@@ -277,8 +290,11 @@ body {
   }
   .about .about-text {
     padding-left: 0;
-    text-align: center;
+    /* text-align: center; */
     max-width: 100%;
+  }
+  .about .about-text br {
+    display: none;
   }
   .about .akdog {
     position: static;
@@ -286,5 +302,8 @@ body {
   }
   .menu-list {
     width: 55%;
-  }
+    }
+  .footer {
+    text-align: center;
+    }
 }

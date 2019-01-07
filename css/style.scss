@@ -239,16 +239,25 @@ body {
   }
   @media screen and (min-width:1024px){
     body {
-    background-size: 85%;
+      background-size: 85% auto;
     }
   }
   @media screen and (max-width: 768px) {
     body {
+      background-image: url("../images/bgimg_moble.jpg");
+      background-position: center center;
       background-size: cover;
+    }
+    .top {
+      margin: 10% 5%;
     }
     .top .site-title-sub {
       font-size: 1.2rem;
-        }
+    }
+    .site-title-sub::after, .site-title-sub::before {
+      width: 20px;
+      margin: 0 20px;
+    }
     .about {
       padding: 5% 5% 10%;
         .about-title {
@@ -256,8 +265,11 @@ body {
         }
         .about-text {
           padding-left: 0;
-          text-align: center;
+          // text-align: center;
           max-width: 100%;
+          br {
+            display: none;
+          }
         }
         .akdog {
           position: static;
@@ -267,4 +279,7 @@ body {
       .menu-list {
         width: 55%;
       }
-  }
+      .footer {
+        text-align: center;
+      }
+    }
