@@ -7,13 +7,15 @@ html {
 }
 
 body {
-  background: #fff url("../images/bgimg.jpg") no-repeat fixed;
-  background-size: cover;
-  background-position: center center;
-  color: #fff;
-  text-align: center;
-  font-size: 1.4rem;
-  font-family: 'Fredericka the Great', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, cursive, 'PT Mono', monospace;
+    background-image: url("../images/bgimg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Fredericka the Great', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, cursive, 'PT Mono', monospace;
 }
 
 .top {
@@ -260,6 +262,8 @@ body {
 }
 @media screen and (max-width: 768px) {
   body {
+    background-image: #fff url("../images/bgimg_moble.jpg");
+    background-position: center center;
     background-size: cover;
   }
   .top .site-title-sub {
