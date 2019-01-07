@@ -7,7 +7,7 @@ html {
   box-sizing: border-box;
 }
 body {
-    background: #fff url("../images/tyler-nix-489782-unsplash.jpg") no-repeat fixed left bottom;
+    background: #fff url("../images/bgimg.jpg") no-repeat fixed left bottom;
     // background-size: cover;
     background-size: 85%;
     background-position: center;
@@ -236,7 +236,11 @@ body {
     text-align: right;
     letter-spacing: 0.1rem;
   }
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
+    body {
+      background-size: 100%;
+      background-size: cover;
+    }
     .top .site-title-sub {
       font-size: 1.2rem;
         }
