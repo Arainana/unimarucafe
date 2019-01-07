@@ -7,9 +7,9 @@ html {
 }
 
 body {
-  background: #fff url("../images/bgimg.jpg") no-repeat fixed left bottom;
+  background: #fff url("../images/bgimg.jpg") no-repeat fixed;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   color: #fff;
   text-align: center;
   font-size: 1.4rem;
@@ -253,9 +253,9 @@ body {
   text-align: right;
   letter-spacing: 0.1rem;
 }
-@media screen and (min-width:1024px){
+@media screen and (min-width:1024px) {
   body {
-  background-size: 85%;
+  background-size: 85% auto;
   }
 }
 @media screen and (max-width: 768px) {
