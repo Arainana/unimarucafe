@@ -10,7 +10,6 @@ body {
     background-image: url("../images/bgimg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
     color: #fff;
@@ -271,7 +270,6 @@ body {
   body {
     background-image: url("../images/bgimg_moble.jpg");
     background-position: center center;
-    -webkit-background-size: cover;
     background-size: cover;
   }
   .top {

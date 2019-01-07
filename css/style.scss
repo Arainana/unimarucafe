@@ -10,7 +10,6 @@ body {
     background: url("../images/bgimg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
     color: #fff;
@@ -74,14 +73,6 @@ body {
       color: #CECECE;
       line-height: 2.2rem;
     }
-    // .akdog-text::after {
-    //   content: "";
-    //   position: absolute;
-    //   display: inline-block;
-    //   background-color: orange;
-    //   width: 100px;
-    //   height: 100px;
-    // }
 }
 
 .akdog {
@@ -247,7 +238,6 @@ body {
     body {
       background-image: url("../images/bgimg_moble.jpg");
       background-position: center center;
-      -webkit-background-size: cover;
       background-size: cover;
     }
     .top {
