@@ -249,7 +249,7 @@ body {
       background-size: cover;
     }
     .top {
-      margin: 10% 5%;
+      margin: 20% 5%;
     }
     .top .site-title-sub {
       font-size: 1.2rem;
@@ -263,17 +263,20 @@ body {
         .about-title {
           left: 0;
         }
+        .about-unimarucafe {
+          padding: 0;
+        }
         .about-text {
           padding-left: 0;
-          // text-align: center;
           max-width: 100%;
           br {
             display: none;
           }
         }
         .akdog {
-          position: static;
+          position: relative;
           padding-top: 5%;
+          right: 0;
         }
       }
       .menu-list {
