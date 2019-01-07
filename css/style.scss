@@ -8,9 +8,6 @@ html {
 }
 body {
     background: #fff url("../images/bgimg.jpg") no-repeat fixed left bottom;
-    // background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
     background-size: 85%;
     background-position: center;
     color: #fff;
@@ -238,9 +235,13 @@ body {
     text-align: right;
     letter-spacing: 0.1rem;
   }
+  @media screen and (min-width:1024px){
+    body {
+    background-size: 85%;
+    }
+  }
   @media screen and (max-width: 768px) {
     body {
-      background-size: 100%;
       background-size: cover;
     }
     .top .site-title-sub {
