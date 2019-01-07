@@ -8,6 +8,8 @@ html {
 
 body {
   background: #fff url("../images/bgimg.jpg") no-repeat fixed left bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: 85%;
   background-position: center;
   color: #fff;
