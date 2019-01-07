@@ -262,7 +262,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   body {
-    background-image: #fff url("../images/bgimg_moble.jpg");
+    background-image: url("../images/bgimg_moble.jpg");
     background-position: center center;
     background-size: cover;
   }
