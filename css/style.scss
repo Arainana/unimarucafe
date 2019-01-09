@@ -16,7 +16,7 @@ body {
     text-align: center;
     font-size: 1.4rem;
     font-family: 'Fredericka the Great', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, cursive, 'PT Mono', monospace;
-    }
+}
 
 .top {
     margin: 15%;
@@ -42,7 +42,7 @@ body {
       background-color: #fff;
       vertical-align: middle;
     }
-  }
+}
 .about {
   position: relative;
   padding: 5%;
@@ -102,7 +102,7 @@ body {
         height: 80px;
         border-radius: 40px;
         border: 2px #D09E64 dashed;
-    }
+      }
 }
 .menu {
     background-color: #fff;
@@ -229,52 +229,61 @@ body {
     text-align: right;
     letter-spacing: 0.1rem;
   }
-  @media screen and (min-width:1024px){
-    body {
-      background-size: 85% auto;
-    }
+
+@media screen and (min-width:960px){
+  body {
+    background-size: 85% auto;
   }
-  @media screen and (max-width: 768px) {
-    body {
-      background-image: url("../images/bgimg_moble.jpg");
-      background-position: center center;
+}
+
+@media screen and (max-width: 768px) {
+  .top {
+    margin: 20% 5%;
+  }
+  .top .site-title-sub {
+    font-size: 1.2rem;
+  }
+  .site-title-sub::after, .site-title-sub::before {
+    width: 20px;
+    margin: 0 20px;
+  }
+  .about {
+    padding: 5% 5% 10%;
+      .about-title {
+        left: 0;
+      }
+      .about-unimarucafe {
+        padding: 0;
+      }
+      .about-text {
+        padding-left: 0;
+        max-width: 100%;
+        br {
+          display: none;
+        }
+      }
+      .akdog {
+        position: relative;
+        padding-top: 5%;
+        right: 0;
+      }
+    }
+    .menu-list {
+      width: 55%;
+    }
+    .footer {
+      text-align: center;
+    }
+    body::before {
+      content: "";
+      background: url(../images/bgimg_moble.jpg) no-repeat center center;
       background-size: cover;
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
     }
-    .top {
-      margin: 20% 5%;
-    }
-    .top .site-title-sub {
-      font-size: 1.2rem;
-    }
-    .site-title-sub::after, .site-title-sub::before {
-      width: 20px;
-      margin: 0 20px;
-    }
-    .about {
-      padding: 5% 5% 10%;
-        .about-title {
-          left: 0;
-        }
-        .about-unimarucafe {
-          padding: 0;
-        }
-        .about-text {
-          padding-left: 0;
-          max-width: 100%;
-          br {
-            display: none;
-          }
-        }
-        .akdog {
-          position: relative;
-          padding-top: 5%;
-          right: 0;
-        }
-      }
-      .menu-list {
-        width: 55%;
-      }
-      .footer {
-        text-align: center;
-      }
-    }
+}

@@ -258,7 +258,7 @@ body {
 
 /* ここからレスポンシブ */
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:960px) {
   body {
   background-size: 85% auto;
   }
@@ -267,11 +267,6 @@ body {
 /* スマートフォン用 */
 
 @media screen and (max-width: 768px) {
-  body {
-    background-image: url("../images/bgimg_moble.jpg");
-    background-position: center center;
-    background-size: cover;
-  }
   .top {
     margin: 20% 5%;
   }
@@ -308,5 +303,20 @@ body {
     }
   .footer {
     text-align: center;
+    }
+    body {
+      background: none;
+    }
+    body::before {
+      content: "";
+      background: url(../images/bgimg_moble.jpg) no-repeat center center;
+      background-size: cover;
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
     }
 }
