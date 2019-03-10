@@ -16,6 +16,18 @@ body {
     text-align: center;
     font-size: 1.4rem;
     font-family: 'Fredericka the Great', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, cursive, 'PT Mono', monospace;
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
 }
 
 .top {

@@ -7,15 +7,35 @@ html {
 }
 
 body {
-    background-image: url("../images/bgimg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center center;
-    color: #fff;
-    text-align: center;
-    font-size: 1.4rem;
-    font-family: 'Fredericka the Great', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, cursive, 'PT Mono', monospace;
+  background: url("../images/bgimg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: 'Fredericka the Great', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, cursive, 'PT Mono', monospace;
+  animation: fadeIn 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .top {
@@ -256,15 +276,11 @@ body {
   letter-spacing: 0.1rem;
 }
 
-/* ここからレスポンシブ */
-
-@media screen and (min-width:960px) {
+@media screen and (min-width: 960px) {
   body {
-  background-size: 85% auto;
+    background-size: 85% auto;
   }
 }
-
-/* スマートフォン用 */
 
 @media screen and (max-width: 768px) {
   .top {
@@ -280,11 +296,11 @@ body {
   .about {
     padding: 5% 5% 10%;
   }
-  .about .about-unimarucafe {
-    padding: 0;
-  }
   .about .about-title {
     left: 0;
+  }
+  .about .about-unimarucafe {
+    padding: 0;
   }
   .about .about-text {
     padding-left: 0;
@@ -300,23 +316,20 @@ body {
   }
   .menu-list {
     width: 55%;
-    }
+  }
   .footer {
     text-align: center;
-    }
-    body {
-      background: none;
-    }
-    body::before {
-      content: "";
-      background: url(../images/bgimg_moble.jpg) no-repeat center center;
-      background-size: cover;
-      display: block;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: -1;
-    }
+  }
+  body::before {
+    content: "";
+    background: url(../images/bgimg_moble.jpg) no-repeat center center;
+    background-size: cover;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
 }
