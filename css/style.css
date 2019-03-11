@@ -6,7 +6,25 @@ html {
   box-sizing: border-box;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #fff;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.08);
+}
+
+header h1 {
+  color: #333;
+  font-size: 1.5rem;
+  letter-spacing: 0.4rem;
+  margin: 2px 0;
+}
+
 body {
+  position: relative;
   background: url("../images/bgimg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -17,7 +35,7 @@ body {
   font-size: 1.4rem;
   font-family: 'Fredericka the Great', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, cursive, 'PT Mono', monospace;
   animation: fadeIn 2s ease 0s 1 normal;
-  -webkit-animation: fadeIn 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
 }
 
 @keyframes fadeIn {
