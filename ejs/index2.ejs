@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <title>cafe de unimaru</title>
+  </head>
+
+  <body>
+      <!-- ↓これをいれる -->
+      <!-- <% include common/_header %> -->
+    <div class="main">
+        <div class="content">
+        <section class="top">
+            <h1 class="site-title">Test desuyo</h1>
+            <h2 class="site-title-sub">in the soho 412</h2>
+        </section>
+
+        <section class="about">
+            <div class="about-unimarucafe">
+            <p class="about-title fadein-bottom">カフェ・ド・うにまる とは？</p>
+            <p class="about-text fadein-bottom">お疲れ様です。うにまるです。<br>
+            この度、the soho412にてカフェをオープンさせました。<br>
+            その名も「cafe de Unimaru」。<br>
+
+            何言ってんだコイツと思う方もいらっしゃるかと思いますが、まずは一度足をお運び下さい。<br>
+            今後続々とメニューを増やしていく予定です。（抹茶ラテやキャラメルマキアートなど）<br>
+            11月からはケーキセットなども販売します。<br>
+            <br>
+            皆様のご来店、心よりお待ちしております。</p>
+            <div class="akdog">
+            <img class="akdog-image fadein-bottom" src="../images/akdog-img.png" alt="akdog">
+            <p class="akdog-text fadein-bottom">看板犬<br>茶々</p>
+            </div>
+            </div>
+        </section>
+
+        <section class="menu">
+            <h2 class="menu-title">MENU</h2>
+            <div class="menu-list">
+                <div class="menu-item roast_coffee">
+                <div class="menu-text">
+                    <p>Roast Coffee</p>
+                    <p class="caption">深い焙煎による香ばしさと重厚なコク</p>
+                    <p class="price">￥100</p>
+                </div>
+                </div>
+                <div class="menu-item rich_taste">
+                <div class="menu-text">
+                    <p>Rich Taste</p>
+                    <p class="caption">深いコクとキレのある味わい</p>
+                    <p class="price">￥100</p>
+                </div>
+                </div>
+                <div class="menu-item cafe_au_latte">
+                <div class="menu-text">
+                    <p>Cafe au latte</p>
+                    <p class="caption">コーヒーとミルクの織りなす hava a good-day.</p>
+                    <p class="price">￥100</p>
+                </div>
+                </div>
+                <div class="menu-item ks_specialite">
+                <div class="menu-text">
+                    <p>K's specialite</p>
+                    <p class="caption">一段上の上質な味わいとサービスを</p>
+                    <p class="price">￥200</p>
+                </div>
+                </div>
+                <p class="and_more fadein-left">and more...</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>CONTACT</h2>
+            <span>❭</span>
+            <a class="botton" href="http://april-knights.com/">株式会社エイプリルナイツ</a>
+        </section>
+
+        <footer class="footer">
+        <p>©株式会社エイプリルナイツ</p>
+        </footer>
+        </div>
+    </div>
+  </body>
+
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.3.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script>
+         window.sr = ScrollReveal({ reset: true ,mobile: true});
+         sr.reveal( '.fadein-bottom', { origin: 'bottom' , distance: '80%', duration: 1000 , scale: 1.0, delay :500 ,reset: false , opacity: 0, viewFactor: 0.8});
+         sr.reveal( '.fadein-left', { origin: 'left' , distance: '100%', duration: 500 , scale: 1.0, delay :500 ,reset: false , opacity: 0.5, opacity: 0});
+  </script>
+
+</html>

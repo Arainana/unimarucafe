@@ -31,9 +31,8 @@ header {
       color: #fff;
       text-align: center;
       font-size: 1.4rem;
-      font-family: 'Fredericka the Great', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, cursive, 'PT Mono', monospace;
-      animation: fadeIn 2s ease 0s 1 normal;
-      -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
+      animation: fadeIn 1.2s ease 0s 1 normal;
+      width: 100%;
   }
 
   @keyframes fadeIn {
@@ -47,6 +46,7 @@ header {
   }
 
   .top {
+    font-family: 'Fredericka the Great', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif, cursive, 'PT Mono', monospace;
       margin: 15%;
       .site-title {
         font-size: 5.5rem;
@@ -101,7 +101,59 @@ header {
         color: #CECECE;
         line-height: 2.2rem;
       }
+      .mask {
+        background-color: rgba(0, 0, 0, 0.4);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+      }
   }
+  .btn_open, .btn_close {
+    cursor: pointer;
+    font-size: 13px;
+    background: #fff;
+    color: #C10F0F;
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 20px auto 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+  }
+  .modal {
+    position: fixed;
+    background: #fff;
+    z-index: 2;
+    top: 20%;
+    right: 0;
+    left: 0;
+    width: 90%;
+    max-width: 850px;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 0 auto;
+    opacity: 0.95;
+    transition: all 0.5s ease;
+    .kubota_name {
+      color: #C10F0F;
+      font-weight: bold;
+      border-bottom: 1px solid #C10F0F;
+    }
+    .kubota_profile {
+      color: #333;
+      text-align: left;
+    }
+  }
+  #mask.hidden {
+    display: none;
+  }
+  #modal.hidden {
+    transform: translateY(-150%);
+    opacity: 0;
+  }
+
 
   .akdog {
       position: absolute;
@@ -117,11 +169,8 @@ header {
           border: 2px #FFF dashed;
         }
         .akdog-text {
-          // position: absolute;
           display: inline-block;
           font-size: 1.2rem;
-          // bottom: 20%;
-          // right: 9%;
           text-align: center;
           line-height: 25px;
           padding: 14px;
